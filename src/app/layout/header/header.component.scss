@@ -1,0 +1,35 @@
+.header {
+	height: 55px;
+	background-color: #293462;
+	color: #fff;
+	padding: 0 2rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	.heading {
+		text-transform: uppercase;
+	}
+
+	.nav {
+		ul {
+			list-style: none;
+
+			display: flex;
+			align-items: center;
+
+			li {
+				margin-right: 2rem;
+				cursor: pointer;
+			}
+		}
+
+		.rounded {
+			background-color: #d61c4e;
+			color: #fff;
+			padding: .5rem 1rem;
+			border-radius: 1.4rem;
+		}
+	}
+}
