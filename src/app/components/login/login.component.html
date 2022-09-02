@@ -1,23 +1,19 @@
 <div class="container">
-	<h2 class="heading">Missigs</h2>
+	<h2 class="heading" style="font-size: 2.5rem;">Missigs</h2>
 
 	<div class="login">
 		<h2 class="heading">Sign In</h2>
 
 		<form class="form" [formGroup]="theForm">
 			<div class="section">
-				<div class="d-flex flex-column">
-					<mat-form-field appearance="outline">
-						<input type="email" matInput placeholder="Email" formControlName="email">
-					</mat-form-field>
-				</div>
+				<input class="form-field mb-4" type="email" placeholder="Email" formControlName="email">
 		
 				<div class="d-flex flex-column">
-					<mat-form-field appearance="outline">
-						<input type="password" matInput placeholder="Password" formControlName="password">
-					</mat-form-field>
+					<input class="form-field mb-3" type="password" placeholder="Password" formControlName="password">
 
-					<a class="forgot-password" routerLink="/forgot-password">Forgot password</a>
+					<div>
+						<a class="forgot-password" routerLink="/forgot-password">Forgot password</a>
+					</div>
 				</div>
 
 				<div class="btn-save-container">

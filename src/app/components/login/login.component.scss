@@ -1,13 +1,13 @@
 .container {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-
-	padding: 6rem 0;
+    padding: 7rem 0;
+    height: calc(100% - 223px);
 
 	.login {
-		padding: 3rem 8rem;
+		padding: 2.5rem 8rem;
 		box-shadow: 0px 0px 6px #ede7e7;
 		width: 25%;
 
@@ -37,6 +37,13 @@
 				width: 100%;
 			}
 
+			.form-field {
+				padding: 1rem 2rem;
+				border-radius: 16px;
+				color: var(--color-black) !important;
+				border: 1px solid #707070;
+			}
+
 			.btn-save-container {
 				display: flex;
 				align-items: center;
@@ -45,7 +52,7 @@
 				button {
 					background-color: #3bacb6;
 					color: #fff;
-					margin-top: 2rem;
+					margin-top: 1rem;
 					border-radius: 100px;
 					min-width: 20rem;
 				}
@@ -54,7 +61,6 @@
 			.forgot-password {
 				display: flex;
 				justify-content: flex-end;
-				margin-top: -1.6rem;
 				font-size: 1.3rem;
 			}
 		}
@@ -63,6 +69,7 @@
 			display: flex;
 			justify-content: center;
 			margin-top: 2rem;
+			font-size: 1.3rem;
 		}
 	}
 
