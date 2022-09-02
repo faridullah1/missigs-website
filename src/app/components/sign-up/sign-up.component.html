@@ -1,1 +1,68 @@
-<p>sign-up works!</p>
+<div class="container">
+	<h2 class="heading">Missigs</h2>
+
+	<div class="signup">
+		<h2 class="heading-secondary">Register</h2>
+
+		<form class="form" [formGroup]="theForm">
+			<div class="section">
+				<input class="form-field mb-4" type="text" placeholder="First Name" formControlName="firstName">
+
+				<input class="form-field mb-4" type="text" placeholder="Last Name" formControlName="lastName">
+
+				<input class="form-field mb-4" type="email" placeholder="Email" formControlName="email">
+
+				<input class="form-field mb-4" type="password" placeholder="Password" formControlName="password">
+		
+				<input class="form-field mb-3" type="password" placeholder="Confirm Password" formControlName="confirmPassword">
+
+				<div class="d-flex flex-column mt-3">
+					<mat-label class="label">Subscription</mat-label>
+
+					<div class="subscription">
+						<div class="card" 
+							[class.selected]="subs.selected" 
+							*ngFor="let subs of subscriptionTypes"
+							(click)="onSubscriptionChange(subs)">
+							<div class="type">{{ subs.type }}</div>
+							<div class="discount" *ngIf="subs.discount">Save {{ subs.discount }}%</div>
+							<div class="d-flex">
+								<span class="currency">$</span>
+								<span class="amount">{{ subs.ammount }}</span>
+								<span class="duration">mo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div formGroupName="paymentInfo" class="d-flex flex-column mt-3">
+					<mat-label class="label mb-3">Payment Information</mat-label>
+
+					<input class="form-field mb-4" type="text" placeholder="Card Name" formControlName="cardName">
+
+					<input class="form-field mb-4" type="text" placeholder="Card Number" formControlName="cardNumber">
+
+					<div class="d-flex justify-between">
+						<input class="form-field mb-4 expiry-field" type="date" placeholder="Exp. Date" formControlName="expiryDate">
+
+						<input class="form-field mb-4 cvv-field" type="text" placeholder="CVV" formControlName="cvv">
+					</div>
+				</div>
+
+				<div class="checkboxes">
+					<mat-checkbox formControlName="termOfUse">I accept the terms of use</mat-checkbox>
+					<mat-checkbox formControlName="newsLetter">I accept to receive new letter from missigs</mat-checkbox>
+				</div>
+
+				<div class="btn-save-container">
+					<button mat-raised-button>Sign Up</button>
+				</div>
+
+				<div class="account">
+					I already have an account? &nbsp;
+					<a routerLink="/login">Login here</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
