@@ -12,6 +12,7 @@ import { ProfileComponent } from './components/profile/profile.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MaterialModule } from './material/material.module';
     LandingPageComponent,
     SignUpComponent,
     LoginComponent,
-    ProfileComponent
+    ProfileComponent,
+    ForgotPasswordComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,11 @@ body {
 	margin: 0; 
 	font-family: Roboto, "Helvetica Neue", sans-serif; 
 	font-size: 1.6rem;
+	color: var(--color-black);
+}
+
+:root {
+	--color-black: #363636;
 }
 
 .w-100-p{
@@ -51,4 +56,9 @@ body {
 
 h1, h2 {
 	margin: 0 !important;
+}
+
+a {
+	text-decoration: none;
+	color: var(--color-black);
 }

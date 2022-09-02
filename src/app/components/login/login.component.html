@@ -1,1 +1,34 @@
-<p>login works!</p>
+<div class="container">
+	<h2 class="heading">Missigs</h2>
+
+	<div class="login">
+		<h2 class="heading">Sign In</h2>
+
+		<form class="form" [formGroup]="theForm">
+			<div class="section">
+				<div class="d-flex flex-column">
+					<mat-form-field appearance="outline">
+						<input type="email" matInput placeholder="Email" formControlName="email">
+					</mat-form-field>
+				</div>
+		
+				<div class="d-flex flex-column">
+					<mat-form-field appearance="outline">
+						<input type="password" matInput placeholder="Password" formControlName="password">
+					</mat-form-field>
+
+					<a class="forgot-password" routerLink="/forgot-password">Forgot password</a>
+				</div>
+
+				<div class="btn-save-container">
+					<button mat-raised-button>Login</button>
+				</div>
+
+				<div class="no-account">
+					I have't account? &nbsp;
+					<a routerLink="/signup">Sign up here</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
