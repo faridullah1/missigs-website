@@ -1,0 +1,184 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding: 8rem 0;
+
+	.section {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 40%;
+	}
+
+	.heading-primary {
+		font-size: 5rem;
+
+		.highlight {
+			background-color: #D61C4E;
+			color: #fff;
+			padding: 0 2px;
+			border-radius: 6px;
+		}
+
+		.heading-sub {
+			display: block;
+			margin-top: 3.5rem;
+			text-align: center;
+		}
+	}
+
+	.heading-secondary {
+		margin-top: 6rem !important;
+		font-size: 2.6rem;
+		font-weight: 400 !important;
+
+		.heading-sub {
+			display: block;
+			margin-top: .5rem;
+			text-align: center;
+		}
+	}
+
+	.input-container {
+		margin-top: 4rem;
+		position: relative;
+		width: 60%;
+
+		.suffix {
+			position: absolute;
+			top: 1px;
+			right: 0;
+			background-color: var(--color-primary);
+			color: #fff;
+			border-radius: 20px;
+			padding: 8px;
+		}
+	}
+
+	.upgrade {
+		margin-top: 3rem;
+		font-size: 1.3rem;	
+	}
+
+	.lead-section {
+		margin-top: 15rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+
+		.heading {
+			font-size: 2.6rem;
+			font-weight: 500 !important;
+		}
+
+		.lead-info {
+			display: flex;
+			flex-direction: column;
+			width: 42%;
+	
+			.para {
+				color: #707070;
+				font-size: 1.8rem;
+			}
+		}
+
+		.notif-image {
+			width: 20rem;
+			height: 20rem;
+			object-fit: cover;
+		}
+	}
+
+	.finding-clients {
+		flex-direction: column;
+		margin-top: 8rem;
+
+		.cards {
+			display: flex;
+
+			.card {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				padding: 2rem;
+				box-shadow: 0px 0px 6px #ede7e7;
+				width: 40%;
+				border-radius: 1rem;
+	
+				.title {
+					text-transform: uppercase;
+					margin-bottom: 1rem;
+					font-size: 1.8rem;
+					font-weight: 500;
+				}
+
+				&:not(:last-child) {
+					margin-right: 3rem;
+				}
+
+				ul {
+					list-style: none;
+					padding: 0;
+				}
+			}
+		}	
+	}
+
+	.reviews-section {
+		flex-direction: column;
+		margin-top: 8rem;
+		width: 60%;
+
+		.section-title {
+			margin-bottom: 4rem !important;
+		}
+
+		.reviews {
+			display: flex;
+	
+			.review {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+				background-color: var(--color-primary);
+				color: #fff;
+				padding: 1rem;
+				font-size: 1rem;
+				border-radius: 0.8rem;
+	
+				&:not(:last-child) {
+					margin-right: 6rem;
+				}
+
+				.name {
+					text-transform: uppercase;
+				}
+
+				.star {
+					color: #D9D220;
+				}
+
+				mat-icon {
+					font-size: 1.4rem;
+					line-height: 1.4rem;
+					width: 1.4rem;
+					height: 1.4rem;
+				}
+
+				.text {
+					line-height: 1.5;
+				}
+			}
+		}
+	}
+
+	.pricing {
+		flex-direction: column;
+		margin-top: 8rem;
+	}
+}

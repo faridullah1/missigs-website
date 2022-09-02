@@ -37,20 +37,13 @@
 				width: 100%;
 			}
 
-			.form-field {
-				padding: 1rem 2rem;
-				border-radius: 16px;
-				color: var(--color-black) !important;
-				border: 1px solid #707070;
-			}
-
 			.btn-save-container {
 				display: flex;
 				align-items: center;
 				justify-content: center;
 
 				button {
-					background-color: #3bacb6;
+					background-color: var(--color-primary);
 					color: #fff;
 					margin-top: 1rem;
 					border-radius: 100px;

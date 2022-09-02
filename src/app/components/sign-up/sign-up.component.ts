@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 import { SubscriptionType } from 'src/app/models/models';
 
 
@@ -12,7 +13,7 @@ export class SignUpComponent {
 	theForm: FormGroup;
 	subscriptionTypes: SubscriptionType[];
 
-	constructor() {
+	constructor(private router: Router) {
 		this.theForm = new FormGroup({
 			firstName: new FormControl(''),
 			lastName: new FormControl(''),
@@ -21,7 +22,7 @@ export class SignUpComponent {
 			confirmPassword: new FormControl(''),
 
 			subscription: new FormControl(''),
-			
+
 			paymentInfo: new FormGroup({
 				cardName: new FormControl(''),
 				cardNumber: new FormControl(''),
@@ -55,5 +56,9 @@ export class SignUpComponent {
 		}
 
 		subs.selected = true;
+	}
+
+	onSignUp(): void {
+		this.router.navigateByUrl('/complete');
 	}
 }

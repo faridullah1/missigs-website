@@ -1,1 +1,85 @@
-<p>landing-page works!</p>
+<div class="container">
+	<section class="section flex-column">
+		<h1 class="heading-primary">
+			Get <span class="highlight">freelance Jobs</span>
+			<span class="heading-sub">on autopilot</span>
+		</h1>
+	
+		<h2 class="heading-secondary">Expert job match you with top 1% of freelance jobs 
+			<span class="heading-sub">from dozens of premium sources</span>
+		</h2>
+	
+		<div class="input-container">
+			<input type="email" class="form-field" style="width: 88%" placeholder="Type your email">
+			<div class="suffix">Get Jobs</div>
+		</div>
+	
+		<div class="upgrade">Try for free. Upgrade starting at $21/mo. Cancel anytime.</div>
+	</section>
+
+	<section class="section lead-section">
+		<div class="lead-info">
+			<h2 class="heading mb-3">Generete more leads in less time</h2>
+			<p class="para">You didn't become a freelancer to spend your time hunched in front of your computer scrolling through endless job listings. Let us find the right clients for you. You do more work you love.</p>
+		</div>
+
+		<div class="lead-photo">
+			<img class="notif-image" src="assets/images/notif.png" alt="notif">
+		</div>
+	</section>
+
+	<section class="section finding-clients">
+		<h2 class="mb-4">Find freelance clients... the better way.</h2>
+
+		<div class="cards">
+			<div class="card">
+				<div class="title">The Old Way</div>
+				<ul class="old-way-list">
+					<li>Rely on unpredictable client referral.</li>
+					<li>Spends hours sifting through job boards.</li>
+					<li>Share 30% of your paycheck with a platform.</li>
+					<li>Give up control of your client relationship.</li>
+				</ul>
+			</div>
+			<div class="card">
+				<div class="title">The <span class="primary">missigs</span> Way</div>
+				<ul>
+					<li>Rely on unpredictable client referral.</li>
+					<li>Spends hours sifting through job boards.</li>
+					<li>Share 30% of your paycheck with a platform.</li>
+					<li>Give up control of your client relationship.</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="section lead-section">
+		<div class="lead-info">
+			<h2 class="heading mb-3">How missigs works</h2>
+			<p class="para">Missigs is not a freelance marketplace like Upwork or Fiverr. Instead, we’re a lead generation tool you can plug into your existing freelance business. Here’s what happens once you sign up:</p>
+		</div>
+
+		<div class="lead-photo">
+			<img class="notif-image" src="assets/images/notif.png" alt="notif">
+		</div>
+	</section>
+
+	<section class="section reviews-section">
+		<h2 class="section-title">What real freelancers are saying:</h2>
+
+		<div class="reviews">
+			<div class="review" *ngFor="let review of reviews">
+				<div class="name">{{ review.name }}</div>
+				<div>
+					<mat-icon *ngFor="let star of rating(review.rating)" class="star">star</mat-icon>
+				</div>
+				<div class="text">{{ review.text }}</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section pricing">
+		<h2 class="section-title">One flat price. No extra fees.</h2>
+		<h3 class="title-secondary">We work for you. So we don't take percentage of your clients fees. You just make one simple and affordable price.</h3>
+	</section>
+</div>

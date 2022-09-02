@@ -4,3 +4,9 @@ export interface SubscriptionType {
 	discount: number;
 	selected: boolean
 }
+
+export interface Review {
+	name: string;
+	rating: number;
+	text: string;
+}
