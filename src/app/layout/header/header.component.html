@@ -2,11 +2,21 @@
 	<div class="heading">missigs</div>
 	
 	<nav class="nav">
-		<ul>
-			<li routerLink="home">How it works</li>
-			<li routerLink="pricing">Pricing</li>
-			<li routerLink="signup" class="rounded">Signup</li>
-			<li routerLink="login">login</li>
-		</ul>
+		<ng-container [ngTemplateOutlet]="links"></ng-container>
 	</nav>
+
+	<nav class="nav-mob" [class.visible]="isOpen">
+		<ng-container [ngTemplateOutlet]="links"></ng-container>
+	</nav>
+
+	<mat-icon class="menu-icon" (click)="onToggleMenu()">menu</mat-icon>
 </header>
+
+<ng-template #links>
+	<ul>
+		<li routerLink="home" (click)="onNavItemClick()">How it works</li>
+		<li routerLink="pricing" (click)="onNavItemClick()">Pricing</li>
+		<li routerLink="signup" class="rounded" (click)="onNavItemClick()">Signup</li>
+		<li routerLink="login" (click)="onNavItemClick()">login</li>
+	</ul>
+</ng-template>

@@ -31,5 +31,46 @@
 			padding: .5rem 1rem;
 			border-radius: 1.4rem;
 		}
+
+		@media screen and (max-width: 600px) {
+			display: none;
+		}
+	}
+
+	.nav-mob {
+		display: none;
+	}
+
+	.visible {
+		display: block;
+		position: absolute;
+		top: 4rem;
+		right: 2rem;
+		background: #293462;
+		padding: 0 2rem;
+
+		ul {
+			list-style: none;
+			padding: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+			li {
+				cursor: pointer;
+				&:not(:last-child) {
+					margin-bottom: .8rem;
+				}
+			}
+		}
+	}
+
+	.menu-icon {
+		display: none;
+
+		@media screen and (max-width: 600px) {
+			display: block;
+			cursor: pointer;
+		}
 	}
 }
