@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Review } from 'src/app/models/models';
+
 
 @Component({
   selector: 'app-landing-page',
@@ -7,29 +7,10 @@ import { Review } from 'src/app/models/models';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
-	reviews: Review[];
 	oldWay: string[];
 	newWay: string[];
 
 	constructor() {
-		this.reviews = [
-			{
-				name: 'Ali rashidy',
-				rating: 5,
-				text: 'What I love about Solidgigs is they not only deliver you new leads every day, they also give you the resources you need to convert them into paying customers, all for just a fixed fee, no BS.'
-			},
-			{
-				name: 'Ali rashidy',
-				rating: 5,
-				text: 'What I love about Solidgigs is they not only deliver you new leads every day, they also give you the resources you need to convert them into paying customers, all for just a fixed fee, no BS.'
-			},
-			{
-				name: 'Ali rashidy',
-				rating: 5,
-				text: 'What I love about Solidgigs is they not only deliver you new leads every day, they also give you the resources you need to convert them into paying customers, all for just a fixed fee, no BS.'
-			}
-		];
-
 		this.oldWay = [
 			'Rely on unpredictable client referral.', 
 			'Spends hours sifting through job boards.', 
@@ -43,9 +24,5 @@ export class LandingPageComponent {
 			'Keep 100% of your clients paychecks.', 
 			'Maintain full control of your client relationship.'
 		];
-	}
-
-    rating(r: number): number[] {
-		return Array(r);
 	}
 }

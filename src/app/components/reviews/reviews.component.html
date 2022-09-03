@@ -1,0 +1,13 @@
+<section class="container">
+	<h2 class="section-title">What real freelancers are saying:</h2>
+
+	<div class="reviews">
+		<div class="review" *ngFor="let review of reviews">
+			<div class="name">{{ review.name }}</div>
+			<div>
+				<mat-icon *ngFor="let star of rating(review.rating)" class="star">star</mat-icon>
+			</div>
+			<div class="text">{{ review.text }}</div>
+		</div>
+	</div>
+</section>

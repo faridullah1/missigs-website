@@ -16,6 +16,7 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
 import { PricingComponent } from './components/pricing/pricing.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { SubscribeToMailComponent } from './components/subscribe-to-mail/subscribe-to-mail.component';
+import { ReviewsComponent } from './components/reviews/reviews.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { SubscribeToMailComponent } from './components/subscribe-to-mail/subscri
     ForgotPasswordComponent,
     PricingComponent,
     HowItWorksComponent,
-    SubscribeToMailComponent
+    SubscribeToMailComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
