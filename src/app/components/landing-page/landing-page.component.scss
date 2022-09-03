@@ -17,7 +17,7 @@
 		font-size: 5rem;
 
 		.highlight {
-			background-color: #D61C4E;
+			background-color: #DD1864;
 			color: #fff;
 			padding: 0 2px;
 			border-radius: 6px;
@@ -55,6 +55,7 @@
 			color: #fff;
 			border-radius: 20px;
 			padding: 8px;
+			cursor: pointer;
 		}
 	}
 
@@ -68,33 +69,23 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
+		width: 50%;
 
 		.heading {
 			font-size: 2.6rem;
 			font-weight: 500 !important;
-		}
-
-		.lead-info {
-			display: flex;
-			flex-direction: column;
-			width: 42%;
-	
-			.para {
-				color: #707070;
-				font-size: 1.8rem;
-			}
-		}
-
-		.notif-image {
-			width: 20rem;
-			height: 20rem;
-			object-fit: cover;
 		}
 	}
 
 	.finding-clients {
 		flex-direction: column;
 		margin-top: 8rem;
+		width: 60%;
+
+		.section-title {
+			margin-bottom: 3.5rem !important;
+			font-size: 2.2rem;
+		}
 
 		.cards {
 			display: flex;
@@ -104,9 +95,8 @@
 				flex-direction: column;
 				align-items: center;
 
-				padding: 2rem;
+				padding: 2rem 1rem;
 				box-shadow: 0px 0px 6px #ede7e7;
-				width: 40%;
 				border-radius: 1rem;
 	
 				.title {
@@ -116,16 +106,76 @@
 					font-weight: 500;
 				}
 
+				.list-item {
+					height: 3.4rem;
+
+					mat-icon {
+						font-weight: 600;
+						margin-right: -1rem;
+					}
+
+					.close {
+						color: #ff3266;	
+					}
+
+					.tick {
+						color: #fec400;
+					}
+				}
+
 				&:not(:last-child) {
 					margin-right: 3rem;
 				}
-
-				ul {
-					list-style: none;
-					padding: 0;
-				}
 			}
 		}	
+	}
+
+	.how-it-workds {
+		margin-top: 6rem;
+		width: 50%;
+
+		flex-direction: column;
+
+		.section-1 {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+
+		.section-2 {
+			margin-top: 6rem;
+
+			.item {
+				display: flex;
+				align-items: center;
+				margin-bottom: 2rem;
+
+				.index {
+					margin-right: 2rem;
+					font-size: 2.4rem;
+					color: #DD1864;
+					font-weight: 600;
+					font-style: italic;
+				}
+				
+				.text {
+					font-size: 1.8rem;
+					font-weight: 500;
+					padding: 1.5rem 3rem;
+					width: fit-content;
+
+					border: 1px solid gray;
+					border-radius: 15px;
+				}
+			}
+
+			.email-subscription {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin-top: 3rem;
+			}
+		}
 	}
 
 	.reviews-section {
@@ -135,6 +185,7 @@
 
 		.section-title {
 			margin-bottom: 4rem !important;
+			font-size: 2.2rem;
 		}
 
 		.reviews {
@@ -183,6 +234,7 @@
 
 		.section-title {
 			margin-bottom: 1.4rem !important;
+			font-size: 2.2rem;
 		}
 
 		.title-secondary {
@@ -251,5 +303,29 @@
 		.give-try {
 			margin-top: 6rem;
 		}
+	}
+
+	.col1 {
+		display: flex;
+		flex-direction: column;
+		width: 55%;
+
+		.section-title {
+			margin-bottom: 2rem !important;
+			width: 50%;
+			font-size: 2.2rem;
+		}
+
+		.para {
+			color: #707070;
+			font-size: 1.8rem;
+			line-height: 1.4;
+		}
+	}
+
+	.notif-image {
+		width: 20rem;
+		height: 20rem;
+		object-fit: cover;
 	}
 }

@@ -9,58 +9,67 @@
 			<span class="heading-sub">from dozens of premium sources</span>
 		</h2>
 	
-		<div class="input-container">
-			<input type="email" class="form-field" style="width: 88%" placeholder="Type your email">
-			<div class="suffix">Get Jobs</div>
-		</div>
-	
-		<div class="upgrade">Try for free. Upgrade starting at $21/mo. Cancel anytime.</div>
+		<ng-template [ngTemplateOutlet]="emailSubscription"></ng-template>
 	</section>
 
 	<section class="section lead-section">
-		<div class="lead-info">
-			<h2 class="heading mb-3">Generete more leads in less time</h2>
+		<div class="col1">
+			<h2 class="section-title">Generete more leads in less time</h2>
 			<p class="para">You didn't become a freelancer to spend your time hunched in front of your computer scrolling through endless job listings. Let us find the right clients for you. You do more work you love.</p>
 		</div>
 
-		<div class="lead-photo">
+		<div class="col2">
 			<img class="notif-image" src="assets/images/notif.png" alt="notif">
 		</div>
 	</section>
 
 	<section class="section finding-clients">
-		<h2 class="mb-4">Find freelance clients... the better way.</h2>
+		<h2 class="section-title">Find freelance clients... the better way.</h2>
 
 		<div class="cards">
 			<div class="card">
 				<div class="title">The Old Way</div>
-				<ul class="old-way-list">
-					<li>Rely on unpredictable client referral.</li>
-					<li>Spends hours sifting through job boards.</li>
-					<li>Share 30% of your paycheck with a platform.</li>
-					<li>Give up control of your client relationship.</li>
-				</ul>
+				<mat-list>
+					<mat-list-item class="list-item" *ngFor="let way of oldWay">
+						<mat-icon class="close" mat-list-icon>close</mat-icon>
+						<div mat-line>{{ way }}</div>
+					</mat-list-item>
+				</mat-list>
 			</div>
 			<div class="card">
 				<div class="title">The <span class="primary">missigs</span> Way</div>
-				<ul>
-					<li>Rely on unpredictable client referral.</li>
-					<li>Spends hours sifting through job boards.</li>
-					<li>Share 30% of your paycheck with a platform.</li>
-					<li>Give up control of your client relationship.</li>
-				</ul>
+
+				<mat-list>
+					<mat-list-item class="list-item" *ngFor="let way of newWay">
+						<mat-icon class="tick" mat-list-icon>done</mat-icon>
+						<div mat-line>{{ way }}</div>
+					</mat-list-item>
+				</mat-list>
 			</div>
 		</div>
 	</section>
 
-	<section class="section lead-section">
-		<div class="lead-info">
-			<h2 class="heading mb-3">How missigs works</h2>
-			<p class="para">Missigs is not a freelance marketplace like Upwork or Fiverr. Instead, we’re a lead generation tool you can plug into your existing freelance business. Here’s what happens once you sign up:</p>
+	<section class="section how-it-workds">
+		<div class="section-1">
+			<div class="col1">
+				<h2 class="section-title">How Missigs Works</h2>
+				<p class="para">Missigs is not a freelance marketplace like Upwork or Fiverr. Instead, we’re a lead generation tool you can plug into your existing freelance business. Here’s what happens once you sign up:</p>
+			</div>
+	
+			<div class="col2">
+				<img class="notif-image" src="assets/images/notif.png" alt="notif">
+			</div>
 		</div>
 
-		<div class="lead-photo">
-			<img class="notif-image" src="assets/images/notif.png" alt="notif">
+		<div class="section-2">
+			<div class="item" *ngFor="let item of howItWorks; let i=index;">
+				<div class="index">{{ i + 1 }}.</div> 
+				<div class="text">{{ item }}</div>
+			</div>
+
+			<div class="email-subscription">
+				<ng-template [ngTemplateOutlet]="emailSubscription"></ng-template>
+			</div>
 		</div>
 	</section>
 
@@ -103,3 +112,12 @@
 		<div class="give-try">Try free for 7 days. Cancel anytime.</div>
 	</section>
 </div>
+
+<ng-template #emailSubscription>
+	<div class="input-container">
+		<input type="email" class="form-field" style="width: 88%" placeholder="Type your email">
+		<div class="suffix">Get Jobs</div>
+	</div>
+
+	<div class="upgrade">Try for free. Upgrade starting at $21/mo. Cancel anytime.</div>
+</ng-template>
