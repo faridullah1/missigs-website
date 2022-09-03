@@ -1,0 +1,24 @@
+<section class="pricing">
+	<h2 class="section-title">One flat price. No extra fees.</h2>
+	<h3 class="title-secondary">We work for you. So we don't take percentage of your clients fees. You just make one simple and affordable price.</h3>
+
+	<div class="d-flex">
+		<div class="subscription" *ngFor="let subs of subscriptionTypes;">
+			<div class="type">
+				{{ subs.type }}
+
+				<div class="discount" *ngIf="subs.discount">Save {{ subs.discount }}%</div>
+			</div>
+
+			<div class="amount-container">
+				<span class="currency">$</span>
+				<span class="amount">{{ subs.ammount }}</span>
+				<span class="duration">mo</span>
+			</div>
+
+			<button class="btn-try" mat-raised-button>Try for free</button>
+		</div>
+	</div>
+
+	<div class="give-try">Try free for 7 days. Cancel anytime.</div>
+</section>

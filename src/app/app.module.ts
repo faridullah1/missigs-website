@@ -13,6 +13,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { PricingComponent } from './components/pricing/pricing.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { ForgotPasswordComponent } from './components/forgot-password/forgot-pas
     SignUpComponent,
     LoginComponent,
     ProfileComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    PricingComponent
   ],
   imports: [
     BrowserModule,
