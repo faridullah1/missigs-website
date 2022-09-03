@@ -1,0 +1,28 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	display: center;
+
+	.input-container {
+		margin-top: 4rem;
+		position: relative;
+		width: 60%;
+	
+		.suffix {
+			position: absolute;
+			top: 1px;
+			right: 0;
+			background-color: var(--color-primary);
+			color: #fff;
+			border-radius: 20px;
+			padding: 8px;
+			cursor: pointer;
+		}
+	}
+	
+	.upgrade {
+		margin-top: 3rem;
+		font-size: 1.3rem;	
+	}
+}

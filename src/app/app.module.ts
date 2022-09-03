@@ -14,6 +14,8 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from './material/material.module';
 import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { PricingComponent } from './components/pricing/pricing.component';
+import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
+import { SubscribeToMailComponent } from './components/subscribe-to-mail/subscribe-to-mail.component';
 
 
 @NgModule({
@@ -26,7 +28,9 @@ import { PricingComponent } from './components/pricing/pricing.component';
     LoginComponent,
     ProfileComponent,
     ForgotPasswordComponent,
-    PricingComponent
+    PricingComponent,
+    HowItWorksComponent,
+    SubscribeToMailComponent
   ],
   imports: [
     BrowserModule,

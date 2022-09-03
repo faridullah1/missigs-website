@@ -10,7 +10,6 @@ export class LandingPageComponent {
 	reviews: Review[];
 	oldWay: string[];
 	newWay: string[];
-	howItWorks: string[];
 
 	constructor() {
 		this.reviews = [
@@ -43,14 +42,6 @@ export class LandingPageComponent {
 			'Focus on work you actually enjog, not lead generation.',
 			'Keep 100% of your clients paychecks.', 
 			'Maintain full control of your client relationship.'
-		];
-
-		this.howItWorks = [
-			'You tell us what kind of freelance gigs you want.',
-			'We search dozens of sources to find your ideal client.',
-			'You get alerted when we find a good match.',
-			'You send a pitch directly at the lead source.',
-			'You win more of your ideal clients and grow your freelance business.'
 		];
 	}
 

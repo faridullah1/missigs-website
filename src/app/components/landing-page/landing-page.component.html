@@ -9,7 +9,7 @@
 			<span class="heading-sub">from dozens of premium sources</span>
 		</h2>
 	
-		<ng-template [ngTemplateOutlet]="emailSubscription"></ng-template>
+		<app-subscribe-to-mail style="width: 100%;"></app-subscribe-to-mail>
 	</section>
 
 	<section class="section lead-section">
@@ -49,29 +49,7 @@
 		</div>
 	</section>
 
-	<section class="section how-it-workds">
-		<div class="section-1">
-			<div class="col1">
-				<h2 class="section-title">How Missigs Works</h2>
-				<p class="para">Missigs is not a freelance marketplace like Upwork or Fiverr. Instead, we’re a lead generation tool you can plug into your existing freelance business. Here’s what happens once you sign up:</p>
-			</div>
-	
-			<div class="col2">
-				<img class="notif-image" src="assets/images/notif.png" alt="notif">
-			</div>
-		</div>
-
-		<div class="section-2">
-			<div class="item" *ngFor="let item of howItWorks; let i=index;">
-				<div class="index">{{ i + 1 }}.</div> 
-				<div class="text">{{ item }}</div>
-			</div>
-
-			<div class="email-subscription">
-				<ng-template [ngTemplateOutlet]="emailSubscription"></ng-template>
-			</div>
-		</div>
-	</section>
+	<app-how-it-works class="section how-it-works"></app-how-it-works>
 
 	<section class="section reviews-section">
 		<h2 class="section-title">What real freelancers are saying:</h2>
@@ -89,12 +67,3 @@
 
 	<app-pricing class="section"></app-pricing>
 </div>
-
-<ng-template #emailSubscription>
-	<div class="input-container">
-		<input type="email" class="form-field" style="width: 88%" placeholder="Type your email">
-		<div class="suffix">Get Jobs</div>
-	</div>
-
-	<div class="upgrade">Try for free. Upgrade starting at $21/mo. Cancel anytime.</div>
-</ng-template>

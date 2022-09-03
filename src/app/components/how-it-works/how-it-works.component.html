@@ -1,0 +1,23 @@
+<section class="container">
+	<div class="section-1">
+		<div class="col1">
+			<h2 class="section-title">How Missigs Works</h2>
+			<p class="para">Missigs is not a freelance marketplace like Upwork or Fiverr. Instead, we’re a lead generation tool you can plug into your existing freelance business. Here’s what happens once you sign up:</p>
+		</div>
+
+		<div class="col2">
+			<img class="notif-image" src="assets/images/notif.png" alt="notif">
+		</div>
+	</div>
+
+	<div class="section-2">
+		<div class="item" *ngFor="let item of howItWorks; let i=index;">
+			<div class="index">{{ i + 1 }}.</div> 
+			<div class="text">{{ item }}</div>
+		</div>
+
+		<div class="email-subscription">
+			<app-subscribe-to-mail style="width: 100%;"></app-subscribe-to-mail>
+		</div>
+	</div>
+</section>

@@ -83,6 +83,47 @@ body {
 	border: 1px solid #707070;
 }
 
+.col1 {
+	display: flex;
+	flex-direction: column;
+	width: 55%;
+
+	@media screen and (max-width: 950px) {
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+
+	.section-title {
+		margin-bottom: 2rem !important;
+		width: 50%;
+		font-size: 2.2rem;
+
+		@media screen and (max-width: 950px) {
+			width: 100%;
+		}
+	}
+
+	.para {
+		color: #707070;
+		font-size: 1.8rem;
+		line-height: 1.4;
+	}
+}
+
+.col2 {
+	@media screen and (max-width: 950px) {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+}
+
+.notif-image {
+	width: 20rem;
+	height: 20rem;
+	object-fit: cover;
+}
+
 .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline {
     color: black !important;
 }
