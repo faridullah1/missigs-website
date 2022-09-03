@@ -12,16 +12,21 @@
 		width: 20%;
 		border-radius: 1rem;
 
+		@media screen and (max-width: 1280px) {
+			width: 30%;
+		}
+
 		@media screen and (max-width: 960px) {
 			width: 40%;
 		}
 
 		@media screen and (max-width: 750px) {
-			width: 60%;
+			width: 50%;
 		}
 
 		@media screen and (max-width: 600px) {
-			width: 70%;
+			width: 60%;
+			padding: 3rem 4rem;
 		}
 
 		.form {
@@ -75,6 +80,10 @@
 		justify-content: center;
 		margin: 1rem 0 4rem;
 
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+		}
+
 		.card {
 			padding: 1.6rem 3.1rem 3.5rem;
 			border: 2px solid #d7d7d7;
@@ -86,6 +95,12 @@
 			align-items: center;
 			justify-content: space-between;
 			cursor: pointer;
+
+			@media screen and (max-width: 450px) {
+				margin-right: 0;
+				margin-bottom: 1.6rem;
+				height: 8rem;
+			}
 
 			.type {
 				text-transform: uppercase;
@@ -130,6 +145,8 @@
 	}
 
 	.checkboxes {
+		display: flex;
+		flex-direction: column;
 		font-size: 1rem;
 
 		::ng-deep .mat-checkbox-inner-container {
