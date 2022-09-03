@@ -13,14 +13,13 @@ const routes: Routes = [
 	{ path: 'signup', component: SignUpComponent },
 	{ path: 'login', component: LoginComponent },
 	{ path: 'forgot-password', component: ForgotPasswordComponent },
-	{ path: 'pricing', component: LandingPageComponent },
 	{ path: 'complete', component: ProfileComponent },
 
 	{ path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, { anchorScrolling: 'enabled' })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

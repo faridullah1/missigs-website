@@ -14,9 +14,9 @@
 
 <ng-template #links>
 	<ul>
-		<li routerLink="home" (click)="onNavItemClick()">How it works</li>
-		<li routerLink="pricing" (click)="onNavItemClick()">Pricing</li>
-		<li routerLink="signup" class="rounded" (click)="onNavItemClick()">Signup</li>
-		<li routerLink="login" (click)="onNavItemClick()">login</li>
+		<li routerLink="home" (click)="goto('home', 'howItWorks')">How it works</li>
+		<li routerLink="pricing" (click)="goto('home', 'pricing')">Pricing</li>
+		<li routerLink="signup" class="rounded" (click)="goto('signup')">Signup</li>
+		<li routerLink="login" (click)="goto('login')">login</li>
 	</ul>
 </ng-template>

@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component } from '@angular/core';
 
 
@@ -8,14 +9,20 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 	isOpen = false;
-	constructor() { }
+	constructor(private router: Router) { }
 
 	onToggleMenu(): void {
 		this.isOpen = !this.isOpen;
 	}
 
-	onNavItemClick(): void {
+	goto(page: string, id: string | null = null): void {
 		this.isOpen = false;
-		console.log(this.isOpen)
+
+		if (id) {
+			this.router.navigate(['/' + page], { fragment: id });
+		}
+		else {
+			this.router.navigate(['/' + page]);
+		}
 	}
 }
