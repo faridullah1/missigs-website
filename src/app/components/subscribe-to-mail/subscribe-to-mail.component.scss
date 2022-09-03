@@ -20,6 +20,10 @@
 			cursor: pointer;
 		}
 	}
+
+	.form-field {
+		width: calc(100% - 4.3rem) !important;
+	}
 	
 	.upgrade {
 		margin-top: 3rem;
