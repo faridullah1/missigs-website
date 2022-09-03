@@ -17,6 +17,7 @@ import { PricingComponent } from './components/pricing/pricing.component';
 import { HowItWorksComponent } from './components/how-it-works/how-it-works.component';
 import { SubscribeToMailComponent } from './components/subscribe-to-mail/subscribe-to-mail.component';
 import { ReviewsComponent } from './components/reviews/reviews.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
     PricingComponent,
     HowItWorksComponent,
     SubscribeToMailComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,
