@@ -11,8 +11,16 @@
 		align-items: center;
 		justify-content: center;
 		width: 40%;
+
+		@media screen and (max-width: 1150px) {
+			width: 55%;
+		}
+
+		@media screen and (max-width: 770px) {
+			width: 80%;
+		}
 	}
-	
+
 	.heading-primary {
 		font-size: 5rem;
 
@@ -71,9 +79,16 @@
 		align-items: flex-start;
 		width: 50%;
 
+		@media screen and (max-width: 1200px) {
+			width: 65%;
+		}
+
+		@media screen and (max-width: 950px) {
+			flex-direction: column;
+		}
+
 		.heading {
-			font-size: 2.6rem;
-			font-weight: 500 !important;
+			width: 70%;
 		}
 	}
 
@@ -89,6 +104,10 @@
 
 		.cards {
 			display: flex;
+
+			@media screen and (max-width: 1000px) {
+				flex-direction: column;
+			}
 
 			.card {
 				display: flex;
@@ -125,6 +144,11 @@
 
 				&:not(:last-child) {
 					margin-right: 3rem;
+
+					@media screen and (max-width: 1000px) {
+						margin-right: 0;
+						margin-bottom: 3rem;
+					}
 				}
 			}
 		}	
@@ -133,13 +157,24 @@
 	.how-it-workds {
 		margin-top: 6rem;
 		width: 50%;
-
 		flex-direction: column;
+
+		@media screen and (max-width: 1000px) {
+			width: 70%;
+		}
+
+		@media screen and (max-width: 700px) {
+			width: 85%;
+		}
 
 		.section-1 {
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
+	
+			@media screen and (max-width: 950px) {
+				flex-direction: column;
+			}
 		}
 
 		.section-2 {
@@ -156,6 +191,14 @@
 					color: #DD1864;
 					font-weight: 600;
 					font-style: italic;
+
+					@media screen and (max-width: 950px) {
+						font-size: 2rem;
+					}
+
+					@media screen and (max-width: 700px) {
+						font-size: 1.8rem;
+					}
 				}
 				
 				.text {
@@ -166,6 +209,14 @@
 
 					border: 1px solid gray;
 					border-radius: 15px;
+
+					@media screen and (max-width: 950px) {
+						font-size: 1.6rem;
+					}
+
+					@media screen and (max-width: 700px) {
+						font-size: 1.4rem;
+					}
 				}
 			}
 
@@ -183,6 +234,18 @@
 		margin-top: 8rem;
 		width: 60%;
 
+		@media screen and (max-width: 1000px) {
+			width: 80%;
+		}
+
+		@media screen and (max-width: 700px) {
+			width: 90%;
+		}
+
+		@media screen and (max-width: 600px) {
+			width: 80%;
+		}
+
 		.section-title {
 			margin-bottom: 4rem !important;
 			font-size: 2.2rem;
@@ -190,6 +253,10 @@
 
 		.reviews {
 			display: flex;
+
+			@media screen and (max-width: 600px) {
+				flex-direction: column;
+			}
 	
 			.review {
 				display: flex;
@@ -204,6 +271,15 @@
 	
 				&:not(:last-child) {
 					margin-right: 6rem;
+
+					@media screen and (max-width: 800px) {
+						margin-right: 2rem;
+					}
+
+					@media screen and (max-width: 600px) {
+						margin-right: 0;
+						margin-bottom: 6rem;
+					}
 				}
 
 				.name {
@@ -233,16 +309,33 @@
 		flex-direction: column;
 		width: 55%;
 
+		@media screen and (max-width: 950px) {
+			width: 100%;
+			margin-bottom: 2rem;
+		}
+
 		.section-title {
 			margin-bottom: 2rem !important;
 			width: 50%;
 			font-size: 2.2rem;
+
+			@media screen and (max-width: 950px) {
+				width: 100%;
+			}
 		}
 
 		.para {
 			color: #707070;
 			font-size: 1.8rem;
 			line-height: 1.4;
+		}
+	}
+
+	.col2 {
+		@media screen and (max-width: 950px) {
+			display: flex;
+			justify-content: center;
+			width: 100%;
 		}
 	}
 
