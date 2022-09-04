@@ -1,11 +1,11 @@
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
-import { SignUpComponent } from './components/sign-up/sign-up.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
-import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
 import { ProfileComponent } from './components/profile/profile.component';
-import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
+import { ForgotPasswordComponent } from './components/auth/forgot-password/forgot-password.component';
+import { LoginComponent } from './components/auth/login/login.component';
+import { ResetPasswordComponent } from './components/auth/reset-password/reset-password.component';
+import { SignUpComponent } from './components/auth/sign-up/sign-up.component';
 
 const routes: Routes = [
 	{ path: '', redirectTo: 'home', pathMatch: 'full' },
