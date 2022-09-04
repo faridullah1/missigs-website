@@ -11,6 +11,10 @@
 	.heading {
 		text-transform: uppercase;
 		cursor: pointer;
+
+		@media screen and (max-width: 600px) {
+			font-size: 1.6rem;
+		}
 	}
 
 	.nav {
@@ -53,6 +57,7 @@
 		ul {
 			list-style: none;
 			padding: 0;
+			margin: 3rem 0;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -60,7 +65,7 @@
 			li {
 				cursor: pointer;
 				&:not(:last-child) {
-					margin-bottom: .8rem;
+					margin-bottom: 1.2rem;
 				}
 			}
 		}

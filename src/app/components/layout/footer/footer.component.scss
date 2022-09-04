@@ -17,9 +17,27 @@
 		display: flex;
 		align-items: center;
 
+		@media screen and (max-width: 450px) {
+			flex-direction: column;
+			margin: 3rem 0;
+			padding: 0;
+			
+			.separator {
+				display: none;
+			}
+		}
+
 		li {
 			margin-right: 1.5rem;
 			cursor: pointer;
+
+			@media screen and (max-width: 450px) {
+				margin-right: 0;
+				
+				&:not(:last-child) {
+					margin-bottom: .5rem;
+				}
+			}
 		}
 	}
 }

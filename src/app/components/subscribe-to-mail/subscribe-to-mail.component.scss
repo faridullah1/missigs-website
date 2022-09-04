@@ -8,6 +8,10 @@
 		margin-top: 4rem;
 		position: relative;
 		width: 60%;
+
+		@media screen and (max-width: 500px) {
+			width: 85%;
+		}
 	
 		.suffix {
 			position: absolute;
@@ -27,6 +31,7 @@
 	
 	.upgrade {
 		margin-top: 3rem;
-		font-size: 1.3rem;	
+		font-size: 1.3rem;
+		text-align: center;
 	}
 }
