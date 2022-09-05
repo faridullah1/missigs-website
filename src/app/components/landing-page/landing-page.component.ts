@@ -20,7 +20,7 @@ export class LandingPageComponent {
 
 		this.newWay = [
 			'Enjoy predictable leads every weekday.', 
-			'Focus on work you actually enjog, not lead generation.',
+			'Focus on work you actually enjoy, not lead generation.',
 			'Keep 100% of your clients paychecks.', 
 			'Maintain full control of your client relationship.'
 		];
